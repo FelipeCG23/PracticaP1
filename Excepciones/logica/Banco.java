@@ -13,6 +13,12 @@ public class Banco {
 		this.nombre = nombre;
 	}
 	
+	public HashMap<Integer, Cuenta> getCuentas() {
+		return cuentas;
+	}
+	public void setCuentas(HashMap<Integer, Cuenta> cuentas) {
+		this.cuentas = cuentas;
+	}
 	public Banco(String nombre) {
 		this.nombre = nombre;
 		this.cuentas = new HashMap<Integer, Cuenta>();
